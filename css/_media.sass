@@ -1,0 +1,31 @@
+$desktop-res: 1366px
+$tablet-res: 960px
+$mobile-res: 768px
+$max-site-width: 1920px
+
+@mixin tablet-view
+    .container
+        display: grid
+        grid-template-columns: 1fr 1fr 1fr
+        grid-template-rows: 1fr 0
+        grid-template-areas: "info info who-i-am" "footer footer footer"
+        footer
+            grid-area: footer
+            display: grid
+            grid-template-columns: 2fr 1fr
+            padding: 0
+    .who-i-am
+        grid-area: who-i-am
+
+    .info
+        grid-area: info
+
+
+
+@media screen and (min-width: $mobile-res) and (max-width: $tablet-res)
+    @include tablet-view
+
+@media screen and (min-width: $tablet-res+1)
+    @include tablet-view
+    .container
+        max-width: $desktop-res
