@@ -2,8 +2,8 @@
   .container {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 1fr 1fr 1fr;
-        grid-template-columns: 1fr 1fr 1fr;
+    -ms-grid-columns: 1fr 2fr 1fr;
+        grid-template-columns: 1fr 2fr 1fr;
     -ms-grid-rows: 1fr 0;
         grid-template-rows: 1fr 0;
         grid-template-areas: "info info who-i-am" "footer footer footer";
@@ -36,8 +36,8 @@
   .container {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 1fr 1fr 1fr;
-        grid-template-columns: 1fr 1fr 1fr;
+    -ms-grid-columns: 1fr 2fr 1fr;
+        grid-template-columns: 1fr 2fr 1fr;
     -ms-grid-rows: 1fr 0;
         grid-template-rows: 1fr 0;
         grid-template-areas: "info info who-i-am" "footer footer footer";
@@ -78,7 +78,7 @@
 body {
   font-family: 'Roboto', sans-serif;
   color: #f5F7FA;
-  font-size: 14px;
+  font-size: 18px;
 }
 
 .container {
@@ -117,7 +117,6 @@ h3 {
 }
 
 h4 {
-  font-size: 14px;
   margin-top: 1.25em;
   margin-bottom: 0.25em;
 }
