@@ -210,6 +210,14 @@ h5 {
   margin-bottom: 0;
 }
 
+.info a {
+  color: #333840;
+}
+
+.info a:hover {
+  color: #f5F7FA;
+}
+
 footer {
   min-height: 5vh;
   background: #434A54;
